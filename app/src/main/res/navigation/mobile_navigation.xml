@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/all_books">
+
+    <fragment
+        android:id="@+id/all_books"
+        android:name="com.example.digitallibrary.ui.book.BookFragment"
+        android:label="@string/all_books"
+        tools:layout="@layout/fragment_book" />
+
+    <fragment
+        android:id="@+id/all_notes"
+        android:name="com.example.digitallibrary.ui.notes.NotesFragment"
+        android:label="@string/notes"
+        tools:layout="@layout/fragment_notes" />
+
+    <fragment
+        android:id="@+id/all_questions"
+        android:name="com.example.digitallibrary.ui.question.QuestionFragment"
+        android:label="@string/question"
+        tools:layout="@layout/fragment_question" />
+</navigation>

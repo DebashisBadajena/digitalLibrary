@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:elevation="18dp"
+    app:cardCornerRadius="12dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_margin="7dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/notebutton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:padding="5dp">
+
+
+        <ImageView
+            android:id="@+id/noteprofile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/notename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="16dp"
+            android:text="programming with c"
+            android:textColor="#000000"
+
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/authorname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="12dp"
+            android:text="debashis badajena"
+
+
+            android:textColor="#000000"
+            android:textSize="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notename" />
+
+        <TextView
+            android:id="@+id/notesize"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:text="5MB"
+
+
+            android:textColor="#000000"
+            android:textSize="7dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/authorname" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
